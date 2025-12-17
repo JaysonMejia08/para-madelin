@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Madelin Cedeño 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body onclick="iniciarMusica()"> 
+    
+    <div id="bubble-layer"></div>
+
+    <div id="photo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <div class="main-wrapper">
+        <header class="profile-header">
+            <div class="profile-frame">
+                <img src="/assets/photos/Photo1.jpg" alt="Madelin Cedeño" class="main-profile-img">
+            </div>
+            <h1 class="glow-text">Hola, Madelin Cedeño</h1>
+            <p class="subtitle">Eres una de las personas más importantes en mi vida</p>
+            <div class="scroll-indicator">⬇ Desliza para nuestra historia</div>
+        </header>
+
+        <section class="glass-container">
+            <h2 class="section-title">Nuestros Momentos</h2>
+            <div class="dynamic-gallery">
+                <div class="media-box"><img src="/assets/photos/Photo1.jpg" data-message="Mi todo. 💖"></div>
+                <div class="media-box"><img src="/assets/photos/photo2.jpg" data-message="Amo tu risa. 😊"></div>
+                <div class="media-box"><img src="/assets/photos/photo3.jpg" data-message="Eres luz. ✨"></div>
+                <div class="media-box"><img src="/assets/photos/photo4.jpg" data-message="Paz pura. 🌿"></div>
+                <div class="media-box"><img src="/assets/photos/photo5.jpg" data-message="Regalo eterno. 🎁"></div>
+                <div class="media-box"><img src="/assets/photos/photo6.jpg" data-message="Contigo mejor. 💓"></div>
+                <div class="media-box"><img src="/assets/photos/Photo7.jpeg" data-message="Lugar seguro. ❤️"></div>
+                <div class="media-box"><img src="/assets/photos/Photo8.jpeg" data-message="Siempre tú. 💍"></div>
+                <div class="media-box"><img src="/assets/photos/Photo9.jpeg" data-message="Te amo. 😍"></div>
+            </div>
+        </section>
+
+        <section class="glass-container">
+            <h2 class="section-title">Recuerdos en Video</h2>
+            <div class="video-playlist">
+                <video controls src="/assets/videos/video1.mp4" class="custom-video"></video>
+                <video controls src="/assets/videos/video2.mp4" class="custom-video"></video>
+                <video controls src="/assets/videos/video3.mp4" class="custom-video"></video>
+                <video controls src="/assets/videos/video4.mp4" class="custom-video"></video>
+            </div>
+        </section>
+
+        <footer>
+            <p>Teamomucho ❤️</p>
+        </footer>
+    </div>
+
+    <div class="music-card">
+        <div class="music-info">
+            <span class="music-name">Perfect - Ed Sheeran</span>
+            <audio id="main-audio" loop autoplay>
+                <source src="/assets/Music/Ed Sheeran - Perfect.mp3" type="audio/mpeg">
+            </audio>
+            <button id="play-btn">⏸ Pausa</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
